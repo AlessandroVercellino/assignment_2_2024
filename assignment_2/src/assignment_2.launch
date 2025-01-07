@@ -1,8 +1,0 @@
-<launch>
-    <!-- Start the Action Client -->
-    <node pkg="assignment_2" type="action_client.py" name="action_client" output="screen" />
-
-    <!-- Start the Goal Service -->
-    <node pkg="assignment_2" type="goal_service.py" name="goal_service" output="screen" />
-</launch>
-
