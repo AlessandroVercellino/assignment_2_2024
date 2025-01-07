@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- Start the Gazebo simulation -->
+    <include file="$(find robot_description)/launch/sim.launch" />
+
+    <!-- Start the Action Client -->
+    <node pkg="assignment_2_2024" type="action_client.py" name="action_client" output="screen" />
+
+    <!-- Start the Goal Service -->
+    <node pkg="assignment_2_2024" type="goal_service.py" name="goal_service" output="screen" />
+</launch>
+
